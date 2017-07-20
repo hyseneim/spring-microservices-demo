@@ -9,7 +9,7 @@ cache:
 deploy:jdk8:
   stage: test
   script:
-    - 'mvn $MAVEN_CLI_OPTS deploy site site:stage'
+    - 'mvn $MAVEN_CLI_OPTS package'
   only:
     - master
   artifacts:
