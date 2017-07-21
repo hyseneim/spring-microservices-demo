@@ -1,0 +1,9 @@
+sudo: false
+language: java
+
+cache:
+  directories:
+  - "$HOME/.cache"
+
+package:
+  script: "mvn package"
